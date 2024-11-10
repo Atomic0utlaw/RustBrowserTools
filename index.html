@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tool Options</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            overflow-y: scroll;
+        }
+
+        .parallax {
+            background-image: url('rust_event-scaled.webp');
+            height: 100%;
+            background-attachment: fixed;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: -1;
+        }
+
+        .content {
+            position: relative;
+            z-index: 1;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 20px;
+        }
+
+        .container {
+            text-align: center;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+            max-width: 800px;
+            margin: 35px auto;
+        }
+
+        .button {
+            display: inline-block;
+            margin: 10px;
+            padding: 15px 25px;
+            background-color: #3333ff;
+            color: #fff;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            font-size: 18px;
+            text-decoration: none;
+            transition: background-color 0.3s, transform 0.2s;
+            text-align: center;
+        }
+
+        .button:hover {
+            background-color: #0056b3;
+            transform: scale(1.05);
+        }
+
+        .footer {
+            text-align: center;
+            padding: 10px;
+            color: #ffd700;
+            font-size: 14px;
+            position: relative;
+            z-index: 1;
+            margin-top: 20px;
+        }
+
+        .footer a {
+            color: #ffd700;
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="parallax"></div>
+    <div class="content">
+        <div class="container">
+            <h1 style="color: #ffd700;">Tool Options</h1>
+            <a href="ZoneCleaner.html" class="button">Zone Cleaner</a>
+            <a href="ZoneDelete.html" class="button">Zone Deletion</a>
+            <a href="RaidCalc.php" class="button">Raid Calculator</a>
+        </div>
+    </div>
+    <div class="footer">
+        Background image courtesy of <a href="https://merric-gaming.co.uk/" target="_blank">Merric Gaming</a>.
+    </div>
+</body>
+</html>
